@@ -19,7 +19,7 @@
 
 
             <div class="container-left-text">
-                <img src="../../public/img-0.png" alt="Hospital Tech" class="ml-a img-size">
+                <img src="../../public/img-1.png" alt="Hospital Tech" class="ml-a img-size">
             </div>
 
         </div>
