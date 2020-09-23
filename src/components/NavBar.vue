@@ -6,8 +6,15 @@
 
       <v-spacer></v-spacer>
 
-      <div class="my-2">
-        <v-btn small color="error" @click="changeTheme">change to dark</v-btn>
+      <div class="mt-1 d-flex">
+        <v-icon v-if="darkTheme">mdi-lightbulb-outline</v-icon>
+        <v-icon v-else>mdi-lightbulb</v-icon>
+          <v-switch
+            class="mt-4"
+            color="error"
+            v-model="darkTheme"
+            :label="switchName"
+          ></v-switch> 
       </div>
 
       <!-- <v-btn>
@@ -34,16 +41,24 @@
     name: 'NavBar',
 
     data: () => ({
-      
+      darkTheme: false,
+      switchName:'Luzes acessas'
     }),
 
     methods:{
-      changeTheme(){
-        if(this.$vuetify.theme.dark){
-          this.$vuetify.theme.dark = false
-        }else{
-          this.$vuetify.theme.dark = true
-        }
+
+    },
+
+    watch:{
+      darkTheme(){
+          if(!this.darkTheme){
+            this.$vuetify.theme.dark = false
+            this.switchName = 'Luzes acessas'
+            
+          }else{
+            this.$vuetify.theme.dark = true
+            this.switchName = 'Luzes apagadas'
+          }
       }
     }
   }

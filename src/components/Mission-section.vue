@@ -27,9 +27,9 @@
 export default {
     data:() => ({
         itens:[
-            {imgSrc: './icons-mission-01.svg', title: 'Como funciona?', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ea perspiciatis neque ipsam omnis suscipit ad delectus, ratione consectetur id modi repudiandae commodi porro quaerat laboriosam qui odit aperiam aliquam!'},
-            {imgSrc: './icons-mission-02.svg', title: 'Para quem?', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ea perspiciatis neque ipsam omnis suscipit ad delectus, ratione consectetur id modi repudiandae commodi porro quaerat laboriosam qui odit aperiam aliquam!'},
-            {imgSrc: './icons-mission-03.svg', title: 'Sobre o projeto', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ea perspiciatis neque ipsam omnis suscipit ad delectus, ratione consectetur id modi repudiandae commodi porro quaerat laboriosam qui odit aperiam aliquam!'},
+            {imgSrc: './icons-mission-01.svg', title: 'Como funciona?', description: 'O app conta com o acesso a usuários que fazem parte da equipe do Hospital, uma vez com o acesso ao app, é possivel registrar pacientes, internar, transferir de unidade ou de leito, dar alta e mandar leito para limpesa entre outras utilidades que se complementam.'},
+            {imgSrc: './icons-mission-02.svg', title: 'Para quem?', description: 'O aplicativo foi desenvolvido com o intuito de atender a Hospitais que precisam melhorar seus processos tanto o atendimento do paciente e seu acompanhamento e até as equipes que fazem parte do hospital para que todos possam ter uma qualidade e eficiência.'},
+            {imgSrc: './icons-mission-03.svg', title: 'Sobre o projeto', description: 'O Link Leito é um projeto que foi desenvolvido para que tenha um impacto social na vida de todos, nossa missão é fazer com que todos tenham uma melhor experiência no hospital, tanto os pacientes quanto a equipe de profissionais do hospital em questão.'},
         ]
     })    
 }

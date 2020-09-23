@@ -15,9 +15,9 @@
 
           <p class="mt-3">Uma maneira inteligente e simples de solucionar e reformular o ecossistema hospitalar, confira aqui mais informações sobre o aplicativo, a equipe por trás do projeto e mais!</p>
         
-          <v-btn class="mt-4" color="error" rounded>
+          <!-- <v-btn class="mt-4" color="error" rounded>
             Conheça a Equipe
-          </v-btn>
+          </v-btn> -->
         </div>
       </div>
 
@@ -33,7 +33,7 @@
 
     <AppSection />
 
-    <ProductWonerSection />
+    <!-- <ProductWonerSection /> -->
 
     <FooterSection />
 
