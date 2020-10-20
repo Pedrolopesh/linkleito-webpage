@@ -1,60 +1,46 @@
 <template>
-  <div class="mt-20">
+  <div class="mt-10 container-carousel">
 
         <v-carousel
             class="mt-3 style-carousel ac"
-            cycle
             height="600"
             hide-delimiter-background
+            cycle
             show-arrows-on-hover
         >
-
+          <div class="container-carousel">
             <h1> Equipe Responsavel </h1>
+          </div>
         
             <v-carousel-item
-            v-for="(item, i) in slides"
+            v-for="(item, i) in data"
             :key="i"
             >
             <v-sheet
-                :color="colors[i]"
-                height="100%"
+                class=""
+                color="black"
+                height="70%"
             >
+                <v-card class="p15">
+                    <h1>{{ item.name }}</h1>
+                </v-card>
                 <v-row
-                class="fill-height"
                 align="center"
                 justify="center"
                 >
-                    <div class="display-3">
-                        <div class="container-carrousel">
-                            <img :src="item.imgSrc" alt="">
-                            <div class="ml-6">
-                                {{ item.name }}
-                                <span class="mt-1 d-block subtitle">{{ item.subTitle }}</span>
-                                
-                                <span class="d-block">
-                                    <v-icon class="mt-4 mr-1"> mdi-whatsapp </v-icon><span class="descriptions">{{ item.phone }}</span>
-                                </span>
-                                
-                                <span class="d-block">
-                                    <v-icon class="mt-4 mr-1"> mdi-email </v-icon><span class="descriptions">{{ item.email }}</span>
-                                </span>
-
-                                <span class="d-block">
-                                    
-                                    <v-btn class="ml-2">
-                                        <a :href="item.lekedinUrl" target="_blank">
-                                            <v-icon> mdi-linkedin </v-icon> 
-                                        </a>
-                                    </v-btn>
-                                    
-                                    <!-- <v-btn class="ml-2"><v-icon> mdi-facebook </v-icon> </v-btn> -->
-                                    <!-- <v-btn class="ml-2"><v-icon> mdi-instagram </v-icon> </v-btn> -->
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="p20">
+                    <img :src="item.imgSrc" alt="" class="image-size">
+                </div>
                 </v-row>
+
+                <div class="text-center">
+                    <a target="_blank" :href="item.lekedinUrl">
+                      <v-btn color="primary">
+                        <v-icon>mdi-linkedin</v-icon>
+                      </v-btn>
+                    </a>
+                </div>
+
             </v-sheet>
             </v-carousel-item>
         </v-carousel>
@@ -66,15 +52,15 @@
     data () {
       return {
         colors: [
-          'indigo',
+          'black',
           'warning',
           'pink darken-2',
           'red lighten-1',
           'deep-purple accent-4',
         ],
-        slides: [
+        data: [
             {
-                imgSrc: 'https://avatars2.githubusercontent.com/u/47143677?s=460&v=4', 
+                imgSrc: './Pedro.jpg', 
                 name:'Pedro Lopes', 
                 email: 'pedrolopeshls99@gmail.com', 
                 phone: '(48) 999422614', 
@@ -82,7 +68,7 @@
                 lekedinUrl: 'https://www.linkedin.com/in/pedro-lopes-50b3b818a/',
             },
             { 
-                imgSrc: 'https://res.cloudinary.com/dxblalpv2/image/upload/v1590084958/me_udkvmr.jpg', 
+                imgSrc: './Marco.jpg', 
                 name:'Marco Antônio', 
                 email: 'marcoasjunior90@gmail.com',
                 phone: '(48) 98489-2595', 
@@ -90,7 +76,7 @@
                 lekedinUrl: 'https://www.linkedin.com/in/marco-ant%C3%B4nio-da-silva-j%C3%BAnior-153b36152/',
             },
             { 
-                imgSrc: 'https://res.cloudinary.com/dxblalpv2/image/upload/v1590157243/clo_gac9pl.jpg', 
+                imgSrc: './Clovis.jpg', 
                 name:'Clovis Tavares', 
                 email: 'marcoasjunior90@gmail.com', 
                 phone: '(48) 98489-2595', 
@@ -98,7 +84,7 @@
                 lekedinUrl: 'https://www.linkedin.com/in/clovis-tavares-pmp-81328a15/',
             },
             { 
-                imgSrc: 'https://res.cloudinary.com/dxblalpv2/image/upload/v1590157241/bat_um1pm6.jpg', 
+                imgSrc: './Batistella.jpg', 
                 name:'Paulo Battistella', 
                 email: 'marcoasjunior90@gmail.com', 
                 phone: '(48) 98489-2595',
@@ -118,3 +104,18 @@
     }
   }
 </script>
+<style lang="scss">
+  .container-carousel{
+    display: block;
+    min-height: 100px;
+    max-width: 100%;
+    width: 500px;
+  }
+
+  .image-size{
+    display: block;
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+  }
+</style>

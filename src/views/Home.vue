@@ -33,8 +33,6 @@
 
     <AppSection />
 
-    <!-- <ProductWonerSection /> -->
-
     <FooterSection />
 
 
@@ -49,7 +47,6 @@ import NavBar from '../components/NavBar'
 import ExplaningSection from '../components/Explaning-section'
 import MissionSection from '../components/Mission-section'
 import AppSection from '../components/App-section'
-import ProductWonerSection from '../components/ProductWoner-section'
 import FooterSection from '../components/Footer-section'
 export default {
   name: 'Home',
@@ -58,7 +55,6 @@ export default {
     MissionSection,
     ExplaningSection,
     AppSection,
-    ProductWonerSection,
     FooterSection,
   },
   data:() => ({

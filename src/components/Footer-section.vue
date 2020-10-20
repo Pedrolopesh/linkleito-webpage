@@ -10,6 +10,7 @@
       class="mw-w-100 error lighten-1 white--text text-center"
     >
       <v-card-text>
+        <a target="_blank" href="https://www.instagram.com/hospitalinfantilhijg/">
         <v-btn
           v-for="icon in icons"
           :key="icon"
@@ -18,6 +19,7 @@
         >
           <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
+        </a>
       </v-card-text>
 
       <v-card-text class="white--text pt-0">

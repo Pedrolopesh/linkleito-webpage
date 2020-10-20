@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
+import Vuesax from 'vuesax';
 import 'vuesax/dist/vuesax.css' //Vuesax styles
 import router from './router'
 import store from './store'
-import vuetify from './plugins/vuetify';
-import Vuesax from 'vuesax';
 import './registerServiceWorker';
 import './assets/scss/index.scss';
+import vuetify from './plugins/vuetify';
 
 Vue.use(Vuesax, {
   // options here
