@@ -3,13 +3,13 @@
 
         <v-carousel
             class="mt-3 style-carousel ac"
-            height="600"
+            height="800"
             hide-delimiter-background
+            hide-delimiters
             cycle
-            show-arrows-on-hover
         >
-          <div class="container-carousel">
-            <h1> Equipe Responsavel </h1>
+          <div class="">
+            <h1> Equipe link-leito </h1>
           </div>
         
             <v-carousel-item
@@ -17,10 +17,10 @@
             :key="i"
             >
             <v-sheet
-                class=""
+                class="section-height"
                 color="black"
-                height="70%"
             >
+                <!-- height="60%" -->
                 <v-card class="p15">
                     <h1>{{ item.name }}</h1>
                 </v-card>
@@ -30,12 +30,14 @@
                 >
                 <div class="p20">
                     <img :src="item.imgSrc" alt="" class="image-size">
+
+                    <span class="subtile-carrousel">{{ item.subTitle }}</span>
                 </div>
                 </v-row>
 
                 <div class="text-center">
                     <a target="_blank" :href="item.lekedinUrl">
-                      <v-btn color="primary">
+                      <v-btn color="primary" class="mb-8">
                         <v-icon>mdi-linkedin</v-icon>
                       </v-btn>
                     </a>
@@ -64,7 +66,7 @@
                 name:'Pedro Lopes', 
                 email: 'pedrolopeshls99@gmail.com', 
                 phone: '(48) 999422614', 
-                subTitle: 'Desenvolvedor Front-end Vue js, e Designer interface',
+                subTitle: 'Desenvolvedor Fullstack',
                 lekedinUrl: 'https://www.linkedin.com/in/pedro-lopes-50b3b818a/',
             },
             { 
@@ -72,7 +74,7 @@
                 name:'Marco Antônio', 
                 email: 'marcoasjunior90@gmail.com',
                 phone: '(48) 98489-2595', 
-                subTitle: 'Desenvolvedor Fullstack Vue, Node, MongoDB',
+                subTitle: 'Desenvolvedor Fullstack',
                 lekedinUrl: 'https://www.linkedin.com/in/marco-ant%C3%B4nio-da-silva-j%C3%BAnior-153b36152/',
             },
             { 
@@ -80,7 +82,7 @@
                 name:'Clovis Tavares', 
                 email: 'marcoasjunior90@gmail.com', 
                 phone: '(48) 98489-2595', 
-                subTitle: 'Especialista em Educação, Geoprocessamento, Tecnologia e Gestão de Projetos',
+                subTitle: 'Professor orientador',
                 lekedinUrl: 'https://www.linkedin.com/in/clovis-tavares-pmp-81328a15/',
             },
             { 
@@ -88,8 +90,16 @@
                 name:'Paulo Battistella', 
                 email: 'marcoasjunior90@gmail.com', 
                 phone: '(48) 98489-2595',
-                subTitle: 'Ph. D. Computer Science',
+                subTitle: 'Professor orientador',
                 lekedinUrl: 'https://www.linkedin.com/in/paulo-eduardo-battistella-9222711b/?originalSubdomain=br',
+            },
+            { 
+                imgSrc: './joao.jpg', 
+                name:'João Clayton', 
+                email: 'marcoasjunior90@gmail.com', 
+                phone: '(48) 98489-2595',
+                subTitle: 'Coordenador SENAI',
+                lekedinUrl: 'https://www.linkedin.com/in/jo%C3%A3o-clayton-aires-aa088511a/',
             },
         ],
       }
@@ -107,6 +117,7 @@
 <style lang="scss">
   .container-carousel{
     display: block;
+    height: 550px;
     min-height: 100px;
     max-width: 100%;
     width: 500px;
@@ -117,5 +128,17 @@
     max-width: 100%;
     width: 250px;
     height: 250px;
+  }
+
+  .section-height{
+    height: 60%;
+
+    @media screen and (max-width: 700px){
+      height: 80%;
+    }
+  }
+
+  .subtile-carrousel{
+    font-size: 20px;
   }
 </style>
