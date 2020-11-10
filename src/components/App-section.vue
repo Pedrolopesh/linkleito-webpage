@@ -17,7 +17,7 @@
                 </p>
             
             <div class="mt-9">
-                <h2>Conheça a equipe que tecnicas e mentores do desenvolvimento desse projeto</h2>
+                <h2>Conheça a equipe de técnicos e mentores do desenvolvimento desse projeto</h2>
                 <vs-button gradient size="large" class="mt-3" @click="teamModal = true">
                     Conheça a equipe
                 </vs-button>
