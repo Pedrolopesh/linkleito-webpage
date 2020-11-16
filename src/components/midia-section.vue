@@ -1,8 +1,7 @@
 <template>
     <div class="mt-15">
-        <div class="section-blu">
-            <h1 class="alg-txt-c clr-whi mb-10">Onde Link Leito foi Notícia</h1>
-
+        <div class="section-grey">
+            <h1 class="alg-txt-c mb-10">Onde Link Leito foi Notícia</h1>
             <div class="d-flex ac">
                 <div v-for="(itens, i) in midiaData" :key="i" class="ac mt-15">
                     <a :href="itens.sourceLink" target="_blank">
@@ -49,6 +48,12 @@ export default {
                 customClass:''
             },
             {
+                sourceImages: 'https://www.sbt.com.br/assets/images/logo-sbt.png', 
+                altName:'TV SBT SCC',
+                sourceLink:'https://www.youtube.com/watch?v=o01xFu0Fu6E&feature=youtu.be&ab_channel=SCCSBT',
+                customClass:''
+            },
+            {
                 sourceImages: 'https://yt3.ggpht.com/rKKjHJ3gXy5Ar0dK4vCp1N0YWksOBj3XfUU6CPqk3-AJiJJbZ2xsIGg0lBAjMdNNmP-Z3BjBQxw=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj', 
                 altName:'TV Barriga Verde',
                 sourceLink:'https://www.youtube.com/watch?v=tjca9Od6oGw&ab_channel=TVBARRIGAVERDE',
@@ -65,9 +70,9 @@ export default {
 }
 </script>
 <style lang="scss">
-.section-blu{
+.section-grey{
     display: block;
-    background-color:#5090ea;
+    background-color:#e2e2e2;
     // background-color: #009ddf;
     padding: 100px;
     // min-height: 500px;   

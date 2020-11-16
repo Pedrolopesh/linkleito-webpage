@@ -33,11 +33,11 @@
 
     <AppSection />
 
-    <MidiaSection />
 
     <ContactSection />
 
     <!-- <TeamSection /> -->
+    <MidiaSection />
 
     <FooterSection />
 

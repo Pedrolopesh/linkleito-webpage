@@ -1,8 +1,9 @@
 <template>
   <v-footer
-    class="mt-20"
+    class="1"
     dark
     padless
+    
   >
     <v-card
       flat
