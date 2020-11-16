@@ -39,6 +39,10 @@ export default {
     display: block;
     background-color: #ff6f6a;
     padding: 140px;
+
+    @media screen and (max-width: 700px){
+        padding: 40px;
+    }
     // min-height: 500px;   
 }
 </style>

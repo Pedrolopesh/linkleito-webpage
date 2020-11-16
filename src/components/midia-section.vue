@@ -1,9 +1,19 @@
 <template>
     <div class="mt-15">
         <div class="section-grey">
+            
             <h1 class="alg-txt-c mb-10">Onde Link Leito foi Notícia</h1>
+
+            <div class="d-flex ac brake-small">
+                <div v-for="(itens, i) in firstMidiaData" :key="i" class="ac mt-15">
+                    <a :href="itens.sourceLink" target="_blank">
+                        <img :src="itens.sourceImages" :alt="itens.altName" :class="itens.customClass" class="img-midia-size">
+                    </a>
+                </div>
+            </div>
+
             <div class="d-flex ac">
-                <div v-for="(itens, i) in midiaData" :key="i" class="ac mt-15">
+                <div v-for="(itens, i) in secondMidiaData" :key="i" class="ac mt-7">
                     <a :href="itens.sourceLink" target="_blank">
                         <img :src="itens.sourceImages" :alt="itens.altName" :class="itens.customClass" class="img-midia-size">
                     </a>
@@ -16,7 +26,7 @@
 <script>
 export default {
     data:() => ({
-        midiaData: [
+        firstMidiaData: [
             {
                 sourceImages: 'https://www.saude.sc.gov.br/images/stories/website/novologoses2020ok.png', 
                 altName:'Governo Santa catarina',
@@ -47,6 +57,8 @@ export default {
                 sourceLink:'https://fiesc.com.br/pt-br/imprensa/app-criado-por-estudantes-do-senai-controla-lotacao-do-hospital-infantil',
                 customClass:''
             },
+        ],
+        secondMidiaData:[
             {
                 sourceImages: 'https://www.sbt.com.br/assets/images/logo-sbt.png', 
                 altName:'TV SBT SCC',
@@ -57,6 +69,12 @@ export default {
                 sourceImages: 'https://yt3.ggpht.com/rKKjHJ3gXy5Ar0dK4vCp1N0YWksOBj3XfUU6CPqk3-AJiJJbZ2xsIGg0lBAjMdNNmP-Z3BjBQxw=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj', 
                 altName:'TV Barriga Verde',
                 sourceLink:'https://www.youtube.com/watch?v=tjca9Od6oGw&ab_channel=TVBARRIGAVERDE',
+                customClass:''
+            },
+            {
+                sourceImages: 'https://www.nsctotal.com.br/static/logos/color/nsc.svg', 
+                altName:'NSC TV',
+                sourceLink:'https://www.nsctotal.com.br/noticias/app-criado-por-estudantes-do-senai-controla-lotacao-de-hospital-infantil',
                 customClass:''
             },
             {

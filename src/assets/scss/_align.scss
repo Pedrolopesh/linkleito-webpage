@@ -132,6 +132,14 @@
     }
 }
 
+.mt-16-5{
+    margin-top: 165px !important;
+    
+    @media screen and (max-width: 700px) {
+        margin-top: 105px;
+    }
+}
+
 .mt-17{
     margin-top: 170px !important;
     

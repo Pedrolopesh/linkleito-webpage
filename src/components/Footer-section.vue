@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    class="1"
+    class="mt-20"
     dark
     padless
     
