@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-20">
+    <div class="mt-17 section-red">
         <v-row class="mb-6 p20 brake-small container ac">
         <v-col
             v-for="(item, i) in itens"
@@ -13,9 +13,9 @@
                     <img :src="item.imgSrc" alt="Conections app" class="img-size-25">
                 </span>
                 
-                <h2 class="mt-2 mb-3">{{ item.title }}</h2>
+                <h2 class="clr-whi mt-2 mb-3">{{ item.title }}</h2>
                 
-                <p>{{ item. description }}</p>
+                <p class="clr-whi">{{ item. description }}</p>
 
             </div>
         </v-col>
@@ -34,3 +34,11 @@ export default {
     })    
 }
 </script>
+<style lang="scss">
+.section-red{
+    display: block;
+    background-color: #ff6f6a;
+    padding: 140px;
+    // min-height: 500px;   
+}
+</style>

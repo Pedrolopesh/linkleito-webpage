@@ -33,6 +33,12 @@
 
     <AppSection />
 
+    <MidiaSection />
+
+    <ContactSection />
+
+    <!-- <TeamSection /> -->
+
     <FooterSection />
 
 
@@ -43,11 +49,15 @@
 <script>
 // @ is an alias to /src
 import svgSet from '../assets/Svgs/cpmSvgs';
-import NavBar from '../components/NavBar'
-import ExplaningSection from '../components/Explaning-section'
-import MissionSection from '../components/Mission-section'
-import AppSection from '../components/App-section'
-import FooterSection from '../components/Footer-section'
+import NavBar from '../components/NavBar';
+import ExplaningSection from '../components/Explaning-section';
+import MissionSection from '../components/Mission-section';
+import AppSection from '../components/App-section';
+import MidiaSection from '../components/midia-section';
+import TeamSection from '../components/ProductWoner-section';
+import ContactSection from '../components/Contact-section';
+import FooterSection from '../components/Footer-section';
+
 export default {
   name: 'Home',
   components: {
@@ -55,6 +65,9 @@ export default {
     MissionSection,
     ExplaningSection,
     AppSection,
+    TeamSection,
+    MidiaSection,
+    ContactSection,
     FooterSection,
   },
   data:() => ({

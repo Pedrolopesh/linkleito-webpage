@@ -1,51 +1,63 @@
 <template>
-  <div class="mt-10 container-carousel">
 
-        <v-carousel
-            class="mt-3 style-carousel ac"
-            height="800"
-            hide-delimiter-background
-            hide-delimiters
-            cycle
-        >
-          <div class="">
-            <h1> Equipe link-leito </h1>
-          </div>
-        
-            <v-carousel-item
-            v-for="(item, i) in data"
-            :key="i"
-            >
-            <v-sheet
-                class="section-height"
-                color="black"
-            >
-                <!-- height="60%" -->
-                <v-card class="p15">
-                    <h1>{{ item.name }}</h1>
-                </v-card>
-                <v-row
-                align="center"
-                justify="center"
-                >
-                <div class="p20">
-                    <img :src="item.imgSrc" alt="" class="image-size">
+<div>
+      <div class="mt-9">
+        <h2>Conheça a equipe de técnicos e mentores do desenvolvimento desse projeto</h2>
+        <vs-button gradient size="large" class="mt-3" @click="teamModal = true">
+            Conheça a equipe
+        </vs-button>
+    </div>
+    
+    <vs-dialog blur v-model="teamModal">
+      <div class="mt-10 container-carousel">
+          <v-carousel
+              class="mt-3 style-carousel ac"
+              height="800"
+              hide-delimiter-background
+              hide-delimiters
+              cycle
+          >
+            <div class="">
+              <h1> Equipe link-leito </h1>
+            </div>
+          
+              <v-carousel-item
+              v-for="(item, i) in data"
+              :key="i"
+              >
+              <v-sheet
+                  class="section-height"
+                  color="black"
+              >
+                  <!-- height="60%" -->
+                  <v-card class="p15">
+                      <h1>{{ item.name }}</h1>
+                  </v-card>
+                  <v-row
+                  align="center"
+                  justify="center"
+                  >
+                  <div class="p20">
+                      <img :src="item.imgSrc" alt="" class="image-size">
 
-                    <span class="subtile-carrousel">{{ item.subTitle }}</span>
-                </div>
-                </v-row>
+                      <span class="subtile-carrousel">{{ item.subTitle }}</span>
+                  </div>
+                  </v-row>
 
-                <div class="text-center">
-                    <a target="_blank" :href="item.lekedinUrl">
-                      <v-btn color="primary" class="mb-8">
-                        <v-icon>mdi-linkedin</v-icon>
-                      </v-btn>
-                    </a>
-                </div>
+                  <div class="text-center">
+                      <a target="_blank" :href="item.lekedinUrl">
+                        <v-btn color="primary" class="mb-8">
+                          <v-icon>mdi-linkedin</v-icon>
+                        </v-btn>
+                      </a>
+                  </div>
 
-            </v-sheet>
-            </v-carousel-item>
-        </v-carousel>
+              </v-sheet>
+              </v-carousel-item>
+          </v-carousel>
+      </div>
+
+    </vs-dialog>
   </div>
 </template>
 
@@ -53,6 +65,7 @@
   export default {
     data () {
       return {
+        teamModal: false,
         colors: [
           'black',
           'warning',
