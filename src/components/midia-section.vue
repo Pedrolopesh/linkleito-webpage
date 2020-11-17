@@ -66,9 +66,10 @@ export default {
                 customClass:''
             },
             {
-                sourceImages: './Tvbv2019.png', 
+                sourceImages: './Tvbv2019.png',
                 altName:'TV Barriga Verde',
                 sourceLink:'https://www.youtube.com/watch?v=tjca9Od6oGw&ab_channel=TVBARRIGAVERDE',
+                secondSourceLink:'https://www.youtube.com/watch?v=GJJhjRMotv0&feature=youtu.be&ab_channel=NossoCanal',
                 customClass:''
             },
             {
