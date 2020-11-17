@@ -34,9 +34,36 @@ export default {
                 customClass:''
             },
             {
-                sourceImages: 'http://lageshoje.com.br/wp-content/uploads/2018/05/lages-hoje-logo.png',
-                altName:'Lages Hoje',
-                sourceLink:'http://lageshoje.com.br/tag/aplicativo-link-leito/',
+                sourceImages: 'https://fiesc.com.br/sites/default/files/inline-images/FIESC%20WEB%20big.png', 
+                altName:'Fiesc', 
+                sourceLink:'https://fiesc.com.br/pt-br/imprensa/app-criado-por-estudantes-do-senai-controla-lotacao-do-hospital-infantil',
+                customClass:''
+            },
+            {
+                sourceImages: 'https://www.sbt.com.br/assets/images/logo-sbt.png', 
+                altName:'TV SBT SCC',
+                sourceLink:'https://www.youtube.com/watch?v=o01xFu0Fu6E&feature=youtu.be&ab_channel=SCCSBT',
+                customClass:''
+            },
+            {
+                sourceImages: 'https://www.nsctotal.com.br/static/logos/color/nsc.svg', 
+                altName:'NSC TV',
+                sourceLink:'https://www.nsctotal.com.br/noticias/app-criado-por-estudantes-do-senai-controla-lotacao-de-hospital-infantil',
+                customClass:''
+            },
+                        {
+                sourceImages: './Tvbv2019.png',
+                altName:'TV Barriga Verde',
+                sourceLink:'https://www.youtube.com/watch?v=tjca9Od6oGw&ab_channel=TVBARRIGAVERDE',
+                secondSourceLink:'https://www.youtube.com/watch?v=GJJhjRMotv0&feature=youtu.be&ab_channel=NossoCanal',
+                customClass:''
+            },
+        ],
+        secondMidiaData:[
+            {
+                sourceImages: 'https://i2.wp.com/www.jornalfloripa.com.br/geral/wp-content/uploads/2020/04/unnamed.png?resize=207%2C62&ssl=1', 
+                altName:'Jornal Floripa',
+                sourceLink:'https://www.jornalfloripa.com.br/geral/aplicativo-controla-fluxo-de-pacientes-no-hospital-infantil-de-florianopolis/',
                 customClass:''
             },
             {
@@ -46,36 +73,9 @@ export default {
                 customClass:''
             },
             {
-                sourceImages: 'https://i2.wp.com/www.jornalfloripa.com.br/geral/wp-content/uploads/2020/04/unnamed.png?resize=207%2C62&ssl=1', 
-                altName:'Jornal Floripa',
-                sourceLink:'https://www.jornalfloripa.com.br/geral/aplicativo-controla-fluxo-de-pacientes-no-hospital-infantil-de-florianopolis/',
-                customClass:''
-            },
-            {
-                sourceImages: 'https://fiesc.com.br/sites/default/files/inline-images/FIESC%20WEB%20big.png', 
-                altName:'Fiesc', 
-                sourceLink:'https://fiesc.com.br/pt-br/imprensa/app-criado-por-estudantes-do-senai-controla-lotacao-do-hospital-infantil',
-                customClass:''
-            },
-        ],
-        secondMidiaData:[
-            {
-                sourceImages: 'https://www.sbt.com.br/assets/images/logo-sbt.png', 
-                altName:'TV SBT SCC',
-                sourceLink:'https://www.youtube.com/watch?v=o01xFu0Fu6E&feature=youtu.be&ab_channel=SCCSBT',
-                customClass:''
-            },
-            {
-                sourceImages: './Tvbv2019.png',
-                altName:'TV Barriga Verde',
-                sourceLink:'https://www.youtube.com/watch?v=tjca9Od6oGw&ab_channel=TVBARRIGAVERDE',
-                secondSourceLink:'https://www.youtube.com/watch?v=GJJhjRMotv0&feature=youtu.be&ab_channel=NossoCanal',
-                customClass:''
-            },
-            {
-                sourceImages: 'https://www.nsctotal.com.br/static/logos/color/nsc.svg', 
-                altName:'NSC TV',
-                sourceLink:'https://www.nsctotal.com.br/noticias/app-criado-por-estudantes-do-senai-controla-lotacao-de-hospital-infantil',
+                sourceImages: './lages-hoje-logo.png',
+                altName:'Lages Hoje',
+                sourceLink:'http://lageshoje.com.br/tag/aplicativo-link-leito/',
                 customClass:''
             },
             {
