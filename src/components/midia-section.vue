@@ -34,7 +34,7 @@ export default {
                 customClass:''
             },
             {
-                sourceImages: 'http://lageshoje.com.br/wp-content/uploads/2018/05/lages-hoje-logo.png', 
+                sourceImages: 'http://lageshoje.com.br/wp-content/uploads/2018/05/lages-hoje-logo.png',
                 altName:'Lages Hoje',
                 sourceLink:'http://lageshoje.com.br/tag/aplicativo-link-leito/',
                 customClass:''
