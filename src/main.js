@@ -7,6 +7,10 @@ import store from './store'
 import './registerServiceWorker';
 import './assets/scss/index.scss';
 import vuetify from './plugins/vuetify';
+import axios from 'axios'
+
+Vue.prototype.$http = axios
+Vue.prototype.$url = process.env.VUE_APP_PROD_URL
 
 Vue.use(Vuesax, {
   // options here
@@ -28,3 +32,5 @@ new Vue({
   vuetify,
   render: function (h) { return h(App) }
 }).$mount('#app')
+
+export { axios }

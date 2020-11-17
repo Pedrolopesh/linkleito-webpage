@@ -31,7 +31,7 @@ export default {
             {imgSrc: './icons-mission-02.svg', title: 'Para quem?', description: 'O aplicativo foi desenvolvido com o intuito de atender a Hospitais que precisam melhorar seus processos tanto o atendimento do paciente e seu acompanhamento e até as equipes que fazem parte do hospital para que todos possam ter uma qualidade e eficiência.'},
             {imgSrc: './icons-mission-03.svg', title: 'Sobre o projeto', description: 'O Link Leito é um projeto que nasceu a partir da idea de se criar um impacto social na vida de todos, nossa missão é fazer com que todos tenham uma melhor experiência no hospital, tanto os pacientes quanto a equipe de profissionais do hospital em questão.'},
         ]
-    })    
+    })
 }
 </script>
 <style lang="scss">

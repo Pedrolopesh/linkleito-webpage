@@ -12,7 +12,7 @@
                 </div>
             </div>
 
-            <div class="d-flex ac">
+            <div class="d-flex ac brake-small">
                 <div v-for="(itens, i) in secondMidiaData" :key="i" class="ac mt-7">
                     <a :href="itens.sourceLink" target="_blank">
                         <img :src="itens.sourceImages" :alt="itens.altName" :class="itens.customClass" class="img-midia-size">
@@ -66,7 +66,7 @@ export default {
                 customClass:''
             },
             {
-                sourceImages: 'https://yt3.ggpht.com/rKKjHJ3gXy5Ar0dK4vCp1N0YWksOBj3XfUU6CPqk3-AJiJJbZ2xsIGg0lBAjMdNNmP-Z3BjBQxw=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj', 
+                sourceImages: './Tvbv2019.png', 
                 altName:'TV Barriga Verde',
                 sourceLink:'https://www.youtube.com/watch?v=tjca9Od6oGw&ab_channel=TVBARRIGAVERDE',
                 customClass:''

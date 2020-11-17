@@ -18,6 +18,7 @@
                     Link Leito é o aplicativo desenvolvido em conjunto com a equipe de profissionais da saúde do Hospital Infantil Joana Gusmão e profissionais de tecnologia do SENAI CTAI de Florianópolis, o aplicativo consiste em uma gama de utilidades para atender a pacientes de forma mais eficiente e rápida, de maneira que todos os profissionais possam visualizar e interagir com o processo do paciente, fazendo com que tenha um atendimento mais rápido e assertivo. O aplicativo tem o foco principal de fazer a gestão dos leitos do hospital, fazendo com que a equipe que utiliza o app possam visualizar a situação dos leitos do hospital podendo assim ter um controle maior das unidades.
                 </p>
             </div>
+
         </div>
     </div>
 </template>
