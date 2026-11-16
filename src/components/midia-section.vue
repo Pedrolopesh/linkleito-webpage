@@ -6,7 +6,7 @@
 
             <div class="d-flex ac brake-small">
                 <div v-for="(itens, i) in firstMidiaData" :key="i" class="ac mt-15">
-                    <a :href="itens.sourceLink" target="_blank">
+                    <a :href="itens.sourceLink" target="_blank" rel="noopener noreferrer">
                         <img :src="itens.sourceImages" :alt="itens.altName" :class="itens.customClass" class="img-midia-size">
                     </a>
                 </div>
@@ -14,7 +14,7 @@
 
             <div class="d-flex ac brake-small">
                 <div v-for="(itens, i) in secondMidiaData" :key="i" class="ac mt-7">
-                    <a :href="itens.sourceLink" target="_blank">
+                    <a :href="itens.sourceLink" target="_blank" rel="noopener noreferrer">
                         <img :src="itens.sourceImages" :alt="itens.altName" :class="itens.customClass" class="img-midia-size">
                     </a>
                 </div>
@@ -26,62 +26,39 @@
 <script>
 export default {
     data:() => ({
+        // Só ficam as matérias que ainda estão no ar. Os logos ficam no próprio site (public/midia)
+        // para não quebrarem quando os veículos mudam os arquivos de lugar.
         firstMidiaData: [
             {
-                sourceImages: 'https://www.saude.sc.gov.br/images/stories/website/novologoses2020ok.png', 
-                altName:'Governo Santa catarina',
+                sourceImages: './midia/saude-sc.png',
+                altName:'Secretaria de Estado da Saúde de Santa Catarina',
                 sourceLink:'https://www.saude.sc.gov.br/index.php/noticias-geral/11771-aplicativo-link-leito-controla-fluxo-de-pacientes-no-hijg',
                 customClass:''
             },
             {
-                sourceImages: 'https://fiesc.com.br/sites/default/files/inline-images/FIESC%20WEB%20big.png', 
-                altName:'Fiesc', 
+                sourceImages: './midia/fiesc.png',
+                altName:'FIESC',
                 sourceLink:'https://fiesc.com.br/pt-br/imprensa/app-criado-por-estudantes-do-senai-controla-lotacao-do-hospital-infantil',
                 customClass:''
             },
             {
-                sourceImages: 'https://www.sbt.com.br/assets/images/logo-sbt.png', 
-                altName:'TV SBT SCC',
+                sourceImages: './midia/sbt.svg',
+                altName:'SBT (SCC SBT)',
                 sourceLink:'https://www.youtube.com/watch?v=o01xFu0Fu6E&feature=youtu.be&ab_channel=SCCSBT',
-                customClass:''
-            },
-            {
-                sourceImages: 'https://www.nsctotal.com.br/static/logos/color/nsc.svg', 
-                altName:'NSC TV',
-                sourceLink:'https://www.nsctotal.com.br/noticias/app-criado-por-estudantes-do-senai-controla-lotacao-de-hospital-infantil',
-                customClass:''
-            },
-                        {
-                sourceImages: './Tvbv2019.png',
-                altName:'TV Barriga Verde',
-                sourceLink:'https://www.youtube.com/watch?v=tjca9Od6oGw&ab_channel=TVBARRIGAVERDE',
-                secondSourceLink:'https://www.youtube.com/watch?v=GJJhjRMotv0&feature=youtu.be&ab_channel=NossoCanal',
-                customClass:''
+                customClass:'img-midia-round'
             },
         ],
         secondMidiaData:[
             {
-                sourceImages: 'https://i2.wp.com/www.jornalfloripa.com.br/geral/wp-content/uploads/2020/04/unnamed.png?resize=207%2C62&ssl=1', 
-                altName:'Jornal Floripa',
-                sourceLink:'https://www.jornalfloripa.com.br/geral/aplicativo-controla-fluxo-de-pacientes-no-hospital-infantil-de-florianopolis/',
+                sourceImages: './midia/tv-barriga-verde.png',
+                altName:'TV Barriga Verde',
+                sourceLink:'https://www.youtube.com/watch?v=tjca9Od6oGw&ab_channel=TVBARRIGAVERDE',
                 customClass:''
             },
             {
-                sourceImages: 'https://folhadeflorianopolis.com.br/wp-content/uploads/2019/12/noticias-florianopolis-1.png', 
-                altName:'Folha de Florianópolis',
-                sourceLink:'https://folhadeflorianopolis.com.br/2020/11/10/aplicativo-link-leito-controla-fluxo-de-pacientes-no-hospital-infantil-de-florianopolis/',
-                customClass:''
-            },
-            {
-                sourceImages: './lages-hoje-logo.png',
-                altName:'Lages Hoje',
-                sourceLink:'http://lageshoje.com.br/tag/aplicativo-link-leito/',
-                customClass:''
-            },
-            {
-                sourceImages: 'http://www.imagemdailha.com.br/pages/imgilha2016/images/img/logo.png', 
-                altName:'Jornal imagemdailha',
-                sourceLink:'http://www.imagemdailha.com.br/noticias/cidade/controle-de-pacientes-aplicativo-desenvolvido-por-estudantes-evita-lotacao-no-hospital-infantil-da-capital.html',
+                sourceImages: './midia/imagem-da-ilha.png',
+                altName:'Imagem da Ilha',
+                sourceLink:'https://www.imagemdailha.com.br/noticias/cidade/controle-de-pacientes-aplicativo-desenvolvido-por-estudantes-evita-lotacao-no-hospital-infantil-da-capital.html',
                 customClass:''
             },
         ]
@@ -99,6 +76,10 @@ export default {
 .img-midia-size{
     max-width: 190px;
     width: 100%;
+}
+.img-midia-round{
+    width: 84px;
+    max-width: 84px;
 }
 .img-midia-size-custom{
     max-width: 190px;

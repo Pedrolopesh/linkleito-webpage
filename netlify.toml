@@ -1,0 +1,10 @@
+# Build do site estático (Vue CLI 4). O node-sass antigo não compila em Node atual: a instalação pula
+# os scripts nativos e o Sass é processado pelo pacote "sass". O webpack 4 precisa do provedor
+# legado do OpenSSL a partir do Node 17.
+[build]
+  command = "npm ci --ignore-scripts && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NODE_OPTIONS = "--openssl-legacy-provider"
